@@ -1,0 +1,473 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,800;1,600;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --text-white-color: #fff;
+  --text-red-color: #ef4040;
+  --box-black-color: #1e1e1e;
+  --gray-shade: rgb(152, 152, 152);
+}
+body {
+  background-color: #111111;
+  font-family: "Poppins", sans-serif;
+}
+.wrapper {
+  width: 100%;
+}
+.container,
+nav {
+  width: 80%;
+  margin: 0 auto;
+}
+/* Navigation  */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0 0 0;
+}
+.brand-image img {
+  height: 40px;
+  display: block;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+nav ul li {
+  padding: 0 24px;
+}
+nav ul li.menuIcon {
+  color: var(--text-white-color);
+  display: none;
+  font-size: 24px;
+}
+nav ul li a {
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--text-white-color);
+}
+
+/* Main Body -> Image With text Section  */
+
+.imageWithTextSection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.imageWithTextSection .leftBox {
+  width: 50%;
+}
+.imageWithTextSection .rightBox {
+  width: 50%;
+}
+.imageWithTextSection .leftBox img {
+  padding-top: 50px;
+  width: 100%;
+  display: block;
+  object-fit: contain;
+}
+.rightBox .mainContent p {
+  color: var(--text-white-color);
+  line-height: 1.3;
+  font-weight: 300;
+  padding: 10px 0;
+}
+.rightBox .mainContent .hightLight {
+  color: var(--text-red-color) !important;
+  font-weight: 600;
+  font-size: 24px;
+}
+.imageWithTextSection .rightBox h2 {
+  color: var(--text-white-color);
+  font-size: 64px;
+  line-height: 1.2;
+  font-weight: 600;
+}
+.mainContent button {
+  padding: 12px 24px;
+  font-size: 18px;
+  margin-top: 24px;
+  cursor: pointer;
+  border: none;
+  background-color: var(--text-red-color);
+  color: var(--text-white-color);
+}
+
+/* Main Body -> Experience Section */
+.experienceSection {
+  position: relative;
+}
+.experienceSection::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 50%;
+  top: 0;
+  left: 0;
+  background-color: #181818;
+  z-index: -1;
+}
+.experienceSection .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.experienceTopSection {
+  width: 100%;
+  padding: 100px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+}
+.experienceTopSection .boxes {
+  width: 33.33%;
+  margin: 20px 0;
+}
+.experienceTopSection .boxes .marginBoxes {
+  background-color: var(--box-black-color);
+  margin-right: 20px;
+  padding: 50px;
+}
+.experienceTopSection .boxes .marginBoxes h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--text-white-color);
+}
+.experienceTopSection .boxes .marginBoxes p {
+  padding: 20px 0;
+  color: var(--text-white-color);
+}
+.experienceTopSection .boxes .marginBoxes a {
+  color: var(--text-red-color);
+  text-decoration: none;
+}
+.experienceBottomSection {
+  padding-bottom: 100px;
+}
+.projectBox {
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.projectBox .boxes {
+  width: 33.33%;
+}
+.projectBox .boxes .marginBox {
+  margin-right: 16px;
+}
+.experienceSpecial {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.projectBox .boxes .marginBox .topBox,
+.projectBox .boxes .marginBox .bottomBox {
+  margin: 16px 0;
+  padding: 20px;
+  text-align: center;
+  background-color: var(--box-black-color);
+}
+.experienceSpecial h2 {
+  font-size: 100px;
+  color: var(--text-red-color);
+  line-height: 1;
+}
+.experienceSpecial h4 {
+  color: var(--text-white-color);
+  font-size: 28px;
+  font-weight: 600;
+}
+.boxes .marginBox h2 {
+  color: var(--text-red-color);
+  font-size: 48px;
+}
+.boxes .marginBox h3 {
+  color: var(--text-white-color);
+  font-weight: 500;
+}
+.featureHeadSection {
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.featureHeadSection h2 {
+  color: var(--text-white-color);
+  font-size: 34px;
+  text-transform: uppercase;
+}
+.featureHeadSection p {
+  color: var(--gray-shade);
+}
+
+.featureHeadSection button {
+  padding: 12px 24px;
+  font-size: 16px;
+  margin-right: 20px;
+  cursor: pointer;
+  border: none;
+  background-color: var(--text-red-color);
+  color: var(--text-white-color);
+  text-transform: uppercase;
+}
+.projectSection {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.projectSection .projectBoxes {
+  width: 50%;
+  margin-bottom: 50px;
+}
+.projectSection .projectBoxes:nth-child(odd) .projectMarginBox {
+  margin-right: 20px;
+}
+
+.projectSection .projectBoxes:nth-child(even) .projectMarginBox {
+  margin-left: 20px;
+}
+
+.projectMarginBox .imageBox {
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px;
+  background-color: var(--box-black-color);
+}
+.projectMarginBox .imageBox img {
+  width: 100%;
+  display: block;
+}
+
+.projectMarginBox .contentBox h2 {
+  color: var(--text-white-color);
+  padding: 20px 0 10px 0;
+  line-height: 1;
+}
+.projectMarginBox .contentBox span {
+  align-items: center;
+  display: flex;
+}
+.projectMarginBox .contentBox span a {
+  color: var(--text-red-color);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.projectMarginBox .contentBox span a .fas {
+  padding-left: 5px;
+  font-size: 14px;
+}
+.nextProjectSection {
+  width: 100%;
+  padding: 50px 0;
+  display: flex;
+  margin: 50px 0;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  flex-direction: row;
+  background-color: var(--box-black-color);
+}
+.nextProjectSection .leftBox {
+  width: 70%;
+  padding: 0 50px;
+}
+.nextProjectSection .leftBox h2 {
+  font-size: 54px;
+  line-height: 1.4;
+  color: var(--text-white-color);
+  font-weight: 600;
+}
+.nextProjectSection .leftBox p {
+  color: var(--gray-shade);
+  padding: 20px 50px 20px 0;
+}
+.nextProjectSection .rightBox button {
+  padding: 12px 24px;
+  font-size: 16px;
+  margin-right: 20px;
+  cursor: pointer;
+  border: none;
+  background-color: var(--text-red-color);
+  color: var(--text-white-color);
+  text-transform: uppercase;
+}
+.nextProjectSection .rightBox {
+  width: 30%;
+  padding: 0 50px;
+}
+.bottomNavigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 20px 0;
+}
+.bottomNavigation li {
+  padding: 0 20px;
+}
+.bottomNavigation li a {
+  text-decoration: none;
+  color: var(--text-white-color);
+}
+footer {
+  padding: 36px 0;
+  background-color: var(--box-black-color);
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer ul {
+  list-style-type: none;
+  display: flex;
+}
+footer ul li {
+  padding: 0 32px;
+}
+footer ul li a {
+  text-decoration: none;
+  color: var(--text-white-color);
+  cursor: pointer;
+}
+footer ul li a .fab {
+  font-size: 24px;
+}
+
+.experienceTopSection .marginBoxes span {
+  align-items: center;
+  display: flex;
+}
+.experienceTopSection .marginBoxes span a {
+  color: var(--text-red-color);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.experienceTopSection .marginBoxes span a .fas {
+  padding-left: 5px;
+  font-size: 14px;
+}
+.projectIdon {
+  color: var(--text-white-color);
+  font-size: 56px;
+  padding-bottom: 12px;
+}
+.experienceTopSection .specialProjectBox {
+  background-color: var(--text-red-color) !important;
+}
+.experienceTopSection .specialProjectBox a {
+  color: var(--text-white-color) !important;
+}
+.footer-logo img {
+  height: 40px;
+}
+
+@media only screen and (max-width: 1160px) {
+    .experienceTopSection .boxes {
+      width: 50%;
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    .imageWithTextSection .leftBox,
+    .imageWithTextSection .rightBox {
+      width: 100%;
+      text-align: center;
+    }
+    .imageWithTextSection .rightBox {
+      padding: 20px 0;
+    }
+    .imageWithTextSection .leftBox img {
+      width: 60%;
+      margin: 0 auto;
+    }
+    .nextProjectSection {
+      flex-wrap: wrap;
+    }
+    .nextProjectSection .leftBox {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width: 950px) {
+    nav ul li {
+      display: none;
+    }
+    nav ul li.menuIcon {
+      display: block !important;
+    }
+    .projectHighlight {
+      width: 100% !important;
+    }
+    .projectBox .boxes {
+      width: 50%;
+    }
+    .nextProjectSection .leftBox h2 {
+      font-size: 44px;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .experienceTopSection .boxes .marginBoxes {
+      padding: 30px 20px;
+    }
+    .imageWithTextSection .rightBox h2 {
+      font-size: 44px;
+    }
+    .featureHeadSection h2 {
+      font-size: 24px;
+    }
+    .nextProjectSection .leftBox h2 {
+      font-size: 32px;
+    }
+    .featureHeadSection {
+      flex-wrap: wrap;
+    }
+    .featureHeadSection div {
+      width: 100%;
+    }
+    .featureHeadSection button {
+      margin: 10px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 620px) {
+    .experienceTopSection .boxes {
+      width: 100%;
+    }
+    .projectSection .projectBoxes {
+      width: 100%;
+    }
+    .projectBox .boxes {
+      width: 100%;
+    }
+    .experienceTopSection .boxes .marginBoxes {
+      margin-right: 0;
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    .nextProjectSection .leftBox h2 {
+      font-size: 24px;
+    }
+    .nextProjectSection .leftBox p {
+      padding-right: 0;
+    }
+    footer ul li {
+      padding: 0 10px;
+    }
+    .imageWithTextSection .rightBox h2 {
+      font-size: 32px;
+    }
+    .projectBox .boxes .marginBox {
+      margin: 0 !important;
+    }
+  }
